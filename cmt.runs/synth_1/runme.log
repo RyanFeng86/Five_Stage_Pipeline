@@ -1,0 +1,539 @@
+
+*** Running vivado
+    with args -log bench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bench.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bench.tcl -notrace
+Command: synth_design -top bench -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 34948 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 506.625 ; gain = 210.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bench' [D:/Code/vivado/2/cmt/bench.v:25]
+INFO: [Synth 8-6157] synthesizing module 'cmt' [D:/Code/vivado/2/cmt/cmt.v:1]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:126]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:149]
+INFO: [Synth 8-6157] synthesizing module 'Imem' [D:/Code/vivado/2/cmt/cmt_ram.v:1]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt_ram.v:21]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt_ram.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'Imem' (1#1) [D:/Code/vivado/2/cmt/cmt_ram.v:1]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:183]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:223]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:261]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:354]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:495]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:498]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:552]
+INFO: [Synth 8-6157] synthesizing module 'datamem' [D:/Code/vivado/2/cmt/cmt_ram.v:79]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt_ram.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'datamem' (2#1) [D:/Code/vivado/2/cmt/cmt_ram.v:79]
+INFO: [Synth 8-226] default block is never used [D:/Code/vivado/2/cmt/cmt.v:815]
+WARNING: [Synth 8-6014] Unused sequential element EX_rs_reg was removed.  [D:/Code/vivado/2/cmt/cmt.v:459]
+WARNING: [Synth 8-5788] Register pc_out_reg in module cmt is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/vivado/2/cmt/cmt.v:280]
+WARNING: [Synth 8-5788] Register EX_rd_reg in module cmt is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/vivado/2/cmt/cmt.v:469]
+WARNING: [Synth 8-5788] Register EX_imm_reg in module cmt is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/vivado/2/cmt/cmt.v:472]
+WARNING: [Synth 8-5788] Register EX_shamt_reg in module cmt is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/vivado/2/cmt/cmt.v:474]
+WARNING: [Synth 8-5788] Register MEM_pc_reg in module cmt is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/vivado/2/cmt/cmt.v:712]
+WARNING: [Synth 8-5788] Register MEM_store_data_reg in module cmt is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/vivado/2/cmt/cmt.v:713]
+INFO: [Synth 8-6155] done synthesizing module 'cmt' (3#1) [D:/Code/vivado/2/cmt/cmt.v:1]
+WARNING: [Synth 8-85] always block has no event control specified [D:/Code/vivado/2/cmt/bench.v:1521]
+INFO: [Synth 8-6155] done synthesizing module 'bench' (4#1) [D:/Code/vivado/2/cmt/bench.v:25]
+WARNING: [Synth 8-3331] design datamem has unconnected port re
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 580.125 ; gain = 283.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 580.125 ; gain = 283.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 580.125 ; gain = 283.559
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Code/vivado/2/cmt/cmt.v:501]
+WARNING: [Synth 8-327] inferring latch for variable 'tmp_data_reg' [D:/Code/vivado/2/cmt/cmt.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'imm_ty_reg' [D:/Code/vivado/2/cmt/cmt.v:321]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[31]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[30]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[29]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[28]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[27]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[26]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[25]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[24]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[23]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[22]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[21]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[20]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[19]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[18]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[17]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[16]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[15]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[14]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[13]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[12]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[11]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[10]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[9]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[8]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[7]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[6]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[5]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[4]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[3]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[2]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_D_reg[1]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[31]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[30]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[29]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[28]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[27]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[26]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[25]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[24]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[23]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[22]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[21]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[20]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[19]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[18]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[17]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[16]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[15]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[14]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[13]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[12]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[11]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[10]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[9]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[8]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[7]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[6]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[5]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[4]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[3]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[2]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_C_reg[1]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[31]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[30]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[29]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[28]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[27]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[26]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[25]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[24]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[23]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[22]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[21]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[20]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[19]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[18]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[17]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[16]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[15]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[14]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[13]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[12]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[11]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[10]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[9]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[8]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[7]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[6]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[5]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[4]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[3]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[2]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_B_reg[1]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_A_reg[31]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_A_reg[30]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_A_reg[29]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_A_reg[28]' [D:/Code/vivado/2/cmt/cmt.v:312]
+WARNING: [Synth 8-327] inferring latch for variable 'register_A_reg[27]' [D:/Code/vivado/2/cmt/cmt.v:312]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 580.125 ; gain = 283.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 9     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               8K Bit         RAMs := 8     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 12    
+	   2 Input     32 Bit        Muxes := 15    
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 141   
+	   2 Input      1 Bit        Muxes := 42    
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Imem 
+Detailed RTL Component Info : 
++---RAMs : 
+	               8K Bit         RAMs := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module datamem 
+Detailed RTL Component Info : 
++---RAMs : 
+	               8K Bit         RAMs := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module cmt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 9     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 15    
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   4 Input      1 Bit        Muxes := 133   
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design datamem has unconnected port re
+warning: Removed RAM mem3_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element mem3_reg was removed. 
+warning: Removed RAM mem2_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element mem2_reg was removed. 
+warning: Removed RAM mem1_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element mem1_reg was removed. 
+warning: Removed RAM mem0_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element mem0_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[31]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[30]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[29]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[28]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[27]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[26]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[25]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[24]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[23]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[22]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[21]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[20]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[19]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[18]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[17]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[16]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[15]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[14]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[13]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[12]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[11]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[10]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[9]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[8]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[7]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[6]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[5]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[4]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[3]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[2]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[1]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (tmp_data_reg[0]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (imm_ty_reg[2]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (imm_ty_reg[1]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (imm_ty_reg[0]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][31]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][30]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][29]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][28]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][27]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][26]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][25]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][24]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][23]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][22]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][21]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][20]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][19]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][18]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][17]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][16]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][15]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][14]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][13]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][12]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][11]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][10]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][9]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][8]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][7]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][6]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][5]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][4]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][3]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][2]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][1]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[31][0]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][31]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][30]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][29]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][28]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][27]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][26]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][25]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][24]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][23]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][22]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][21]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][20]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][19]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][18]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][17]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][16]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][15]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][14]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][13]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][12]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][11]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][10]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][9]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][8]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][7]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][6]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][5]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][4]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][3]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][2]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][1]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[30][0]) is unused and will be removed from module cmt.
+WARNING: [Synth 8-3332] Sequential element (register_D_reg[29][31]) is unused and will be removed from module cmt.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4211 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 743.262 ; gain = 446.695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 743.262 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 843.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 214 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 843.934 ; gain = 547.367
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 843.934 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Code/vivado/2/cmt/cmt.runs/synth_1/bench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bench_utilization_synth.rpt -pb bench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 11 16:42:23 2021...
